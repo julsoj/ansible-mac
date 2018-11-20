@@ -1,0 +1,113 @@
+---
+
+username: 'matt'
+
+downloads: ~/.ansible-downloads/
+
+homebrew_installed_packages:
+  - awscli
+  - azure-cli
+  - curl
+  - dfu-util
+  - ffmpeg
+  - git
+  - gnupg
+  - go
+  - hub
+  - jq
+  - lastpass-cli
+  - mtr
+  - nmap
+  - node
+  - pyenv
+  - pyenv-virtualenv
+  - terraform
+  - tmux
+  - tree
+  - vim
+  - watch
+  - wget
+  - youtube-dl
+  - zsh-syntax-highlighting
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - appcleaner
+  - bettertouchtool
+  - docker
+  - dropbox
+  - firefox
+  - homebrew/cask-drivers/logitech-options
+  - homebrew/cask-fonts/font-sourcecodepro-nerd-font
+  - gitkraken
+  - google-chrome
+  - google-cloud-sdk
+  - gpg-suite
+  - insomnia
+  - iterm2
+  - istat-menus
+  - karabiner-elements
+  - malwarebytes
+  - microsoft-azure-storage-explorer
+  - slack
+  - skype
+  - skype-for-business
+  - spotify
+  - synology-surveillance-station-client
+  - tor-browser
+  - twitch
+  - vagrant
+  - vagrant-vmware-utility
+  - visual-studio-code
+  - vlc
+  - vmware-fusion
+  - vmware-horizon-client
+  - wavebox
+  - zoomus
+  - zoomus-outlook-plugin
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 1295203466, name: "Microsoft Remote Desktop (10.2.3)" }
+mas_email: ""
+mas_password: ""
+
+dev_symlinks:
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/bin",
+      dest: "{{ ansible_user_dir }}/Development/bin"
+    }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/home",
+      dest: "{{ ansible_user_dir }}/Development/home"
+    }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/ioports",
+      dest: "{{ ansible_user_dir }}/Development/ioports"
+    }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/scratch",
+      dest: "{{ ansible_user_dir }}/Development/scratch"
+    }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/work",
+      dest: "{{ ansible_user_dir }}/Development/work"
+    }
+
+osx_script: "~/.osx --no-restart"
+
+
+gem_packages: []
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+  # - name: webpack
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+pip_packages: []
+  # - name: mkdocs
+  #   state: present # present/absent/latest, default: present
+  #   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []

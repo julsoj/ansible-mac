@@ -21,6 +21,8 @@ homebrew_installed_packages:
   - node
   - pyenv
   - pyenv-virtualenv
+  - python
+  - python@2
   - terraform
   - tmux
   - tree

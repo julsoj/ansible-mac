@@ -1,9 +1,11 @@
 ---
 - hosts: all
   connection: local
-
+  gather_facts: yes
+  
   vars_files:
     - config.yml
+    - "config.{{ ansible_hostname }}.yml"
 
   pre_tasks:
     - include_vars: "{{ item }}"

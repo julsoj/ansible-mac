@@ -1,0 +1,29 @@
+---
+
+username: 'matt'
+
+downloads: ~/.ansible-downloads/
+
+local_homebrew_installed_packages: []
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+local_homebrew_cask_apps:
+  - karabiner-elements
+  - tunnelblick
+
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+mas_signin_dialog: yes
+
+osx_script: "~/.osx --no-restart"
+
+gem_packages: []
+npm_packages: []
+pip_packages: []
+post_provision_tasks: []
+
+homebrew_installed_packages: "{{ local_homebrew_installed_packages + default_homebrew_installed_packages}}"
+homebrew_cask_apps: "{{ local_homebrew_cask_apps + default_homebrew_cask_apps }}"

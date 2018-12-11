@@ -4,7 +4,7 @@ username: 'matt'
 
 downloads: ~/.ansible-downloads/
 
-homebrew_installed_packages:
+default_homebrew_installed_packages:
   - awscli
   - azure-cli
   - curl
@@ -37,7 +37,7 @@ homebrew_taps:
   - homebrew/cask
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
+default_homebrew_cask_apps:
   - appcleaner
   - bettertouchtool
   - docker
@@ -52,15 +52,17 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - istat-menus
-  - karabiner-elements
+  #- karabiner-elements
   - malwarebytes
   - microsoft-azure-storage-explorer
+  - microsoft-teams
   - slack
   - skype
   - skype-for-business
   - spotify
   - synology-surveillance-station-client
   - tor-browser
+  #- tunnelblick
   - twitch
   - vagrant
   - vagrant-vmware-utility
@@ -82,17 +84,17 @@ dev_symlinks:
   - { src: "{{ ansible_user_dir }}/Dropbox/Development/bin",
       dest: "{{ ansible_user_dir }}/Development/bin"
     }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/home",
-      dest: "{{ ansible_user_dir }}/Development/home"
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/gitlab.home.ioports.net",
+      dest: "{{ ansible_user_dir }}/Development/gitlab.home.ioports.net"
     }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/ioports",
-      dest: "{{ ansible_user_dir }}/Development/ioports"
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.emcrubicon.com",
+      dest: "{{ ansible_user_dir }}/Development/github.emcrubicon.com"
+    }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Development/github.com",
+      dest: "{{ ansible_user_dir }}/Development/github.com"
     }
   - { src: "{{ ansible_user_dir }}/Dropbox/Development/scratch",
       dest: "{{ ansible_user_dir }}/Development/scratch"
-    }
-  - { src: "{{ ansible_user_dir }}/Dropbox/Development/work",
-      dest: "{{ ansible_user_dir }}/Development/work"
     }
 
 osx_script: "~/.osx --no-restart"

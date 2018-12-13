@@ -96,6 +96,9 @@ dev_symlinks:
   - { src: "{{ ansible_user_dir }}/Dropbox/Development/scratch",
       dest: "{{ ansible_user_dir }}/Development/scratch"
     }
+  - { src: "{{ ansible_user_dir }}/Dropbox/Personal/.password-store",
+      dest: "{{ ansible_user_dir }}/.password-store"
+    }
 
 osx_script: "~/.osx --no-restart"
 

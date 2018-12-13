@@ -20,6 +20,7 @@ default_homebrew_installed_packages:
   - mtr
   - nmap
   - node
+  - pass
   - pyenv
   - pyenv-virtualenv
   - python

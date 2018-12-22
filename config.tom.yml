@@ -9,7 +9,8 @@ local_homebrew_installed_packages: []
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
-local_homebrew_cask_apps: []
+local_homebrew_cask_apps:
+  - qmk-toolbox
 
 mas_installed_apps: []
 mas_email: ""

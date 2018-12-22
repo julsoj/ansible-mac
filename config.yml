@@ -54,6 +54,7 @@ default_homebrew_cask_apps:
   - insomnia
   - iterm2
   - istat-menus
+  - karabiner-elements
   - malwarebytes
   - microsoft-azure-storage-explorer
   - microsoft-teams

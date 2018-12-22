@@ -10,7 +10,6 @@ homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 local_homebrew_cask_apps:
-  - karabiner-elements
   - tunnelblick
 
 mas_installed_apps: []

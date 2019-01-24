@@ -10,6 +10,8 @@ homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 local_homebrew_cask_apps:
+  - discord
+  - kiibohd-configurator
   - qmk-toolbox
   - ubersicht
 

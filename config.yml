@@ -57,7 +57,6 @@ default_homebrew_cask_apps:
   - iterm2
   - istat-menus
   - karabiner-elements
-  - kiibohd-configurator
   - malwarebytes
   - microsoft-azure-storage-explorer
   - microsoft-teams
